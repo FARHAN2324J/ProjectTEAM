@@ -58,20 +58,21 @@ const Post = () => {
                 {step === 1 && (
                     <div className="w-[100%]">
                         <div className="bg-[#161617cc] w-[90%] sm:w-[40%] lg:w-[50%] xl:w-[40%] md:w-[60%] m-auto rounded-2xl">
-                            <div className="flex justify-between items-center">
-                                <div className="p-4">
-                                    <label htmlFor="file-upload" className="px-2 py-3 bg-[#9ca3af] text-[#161617cc] rounded-md cursor-pointer border-1 border-[#9ca3af] transition hover:bg-[#161617cc] hover:text-[#9ca3af]">Choose file</label>
+                            <div className="flex items-center">
+                            </div>
+                            <div className="flex flex-col text-center"><img className="w-[10%] m-auto py-5" src="/src/FooterIcons/image-svgrepo-com (1).svg" alt="" /><span className="text-[#9ca3af] text-lg">Drag Your Photos here</span></div>
+                            <div className="p-4 text-center my-5">
+                                    <label htmlFor="file-upload" className="px-11 py-1 bg-[#9ca3af] text-[#161617cc] rounded-md cursor-pointer border-1 border-[#9ca3af] transition hover:bg-[#161617cc] hover:text-[#9ca3af]">Choose file</label>
                                     <input type="file" accept="image/*" className="hidden" id="file-upload" onChange={handleFileChange} />
-                                </div>
-                                <div className="p-4">
-                                    <button className="px-4 py-2 bg-[#161617cc] text-[#9ca3af] border-1 border[#9ca3af] rounded-lg cursor-pointer active:bg-[#9ca3af] active:text-[#161617cc] transition" onClick={handleNext}>Next</button>
-                                </div>
                             </div>
                             {image && (
                             <div className="w-full img-create">
                                 <img src={image} className="w-[80%] py-5 m-auto rounded-md" alt="Uploaded" />
                             </div>
                             )}
+                            <div className="p-4 text-center">
+                                    <button className="px-4 py-2 my-5 bg-[#161617cc] text-[#9ca3af] border-1 border[#9ca3af] rounded-lg cursor-pointer active:bg-[#9ca3af] active:text-[#161617cc] transition" onClick={handleNext}>Next</button>
+                                </div>
                         </div>
                     </div>
                 )}
