@@ -127,4 +127,22 @@ body {
 
 }
 
+::-webkit-scrollbar {
+  width: 5px; 
+
+}
+
+::-webkit-scrollbar-track {
+  background: #161617cc;
+
+}
+
+::-webkit-scrollbar-thumb {
+  background: #505050; 
+
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ffffff; 
+}
 
