@@ -1,0 +1,103 @@
+/* .chat-container {
+    width: 400px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+  } */
+  
+  /* .messages {
+    flex: 1;
+    overflow-y: auto;
+    margin-bottom: 10px;
+  }
+  
+  .message {
+    padding: 10px;
+    border: 1px solid #eee;
+    margin: 5px 0;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .input-form {
+    display: flex;
+  }
+  
+  .input-form input {
+    flex: 1;
+    padding: 10px;
+  }
+  
+  .input-form button {
+    padding: 10px;
+  } */
+
+
+
+
+
+
+
+
+
+.grid-post{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+
+.post {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    border-radius: 15px;
+    border: 1px solid #9ca3af;
+    color: #9ca3af;
+}
+
+
+.post img {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    width: 100%;
+}
+
+
+
+.posts-container .container-post  img {
+    width: 100%;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+
+
+
+
+.container-content input {
+    background-color: transparent;
+    border: none;
+    color: #797979;
+    outline: none;
+}
+
+.container-content textarea {
+    background-color: transparent;
+    color: #797979;
+    outline: none;
+
+}
+
+::placeholder {
+    color: #797979;
+    font-weight: 500;
+}
+
+.post-image-container {
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+}
